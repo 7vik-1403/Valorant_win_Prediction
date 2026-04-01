@@ -1,14 +1,14 @@
 
 from pyexpat import features
 from fastapi import FastAPI 
+
+import os
 import psycopg2
 
-conn = psycopg2.connect(
-    host="localhost",
-    database="valorant_db",
-    user="postgres",
-    password="@7vik123"
-)
+conn = psycopg2.connect(os.getenv("DATABASE_URL"))
+cursor = conn.cursor()
+
+
 cursor = conn.cursor()
 import joblib
 from pipeline import preprocess
