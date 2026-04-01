@@ -4,11 +4,7 @@ from fastapi import FastAPI
 
 import os
 import psycopg2
-
-conn = psycopg2.connect(os.getenv("DATABASE_URL"))
-cursor = conn.cursor()
-
-
+conn = psycopg2.connect( os.getenv("DATABASE_URL"), sslmode="require" ) 
 cursor = conn.cursor()
 import joblib
 from pipeline import preprocess
