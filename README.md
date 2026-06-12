@@ -52,7 +52,8 @@ Game Data → PostgreSQL → FastAPI → ML Model → Streamlit Dashboard
 ### 1️⃣ Clone repo
 
 ```
-git clone https://github.com/your-username/valorant-ml.git
+git clone https://github.com/7vik-1403
+/valorant-ml.git
 cd valorant-ml
 ```
 
@@ -204,7 +205,7 @@ Returns latest game state + prediction
 
 ## 👨‍💻 Author
 
-Your Name
+Satvik Deshmukh 
 
 ---
 
